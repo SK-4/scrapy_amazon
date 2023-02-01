@@ -3,7 +3,7 @@ import re
 
 class AmazonSpider(scrapy.Spider):
     name = "amazon"
-    start_urls = ['https://www.amazon.in/s?k=bags&crid=2M096C61O4MLT&qid=1653308124&sprefix=ba%2Caps%2C283&ref=sr_pg_2']
+    start_urls = []
     for i in range(1,20):
         start_urls.append(f'https://www.amazon.in/s?k=bags&crid=2M096C61O4MLT&qid=1653308124&sprefix=ba%2Caps%2C283&ref=sr_pg_{i}')
 
